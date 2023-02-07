@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV TRISTAN HALL</title>
+    <!-- Editor CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FONTAWESOME CSS -->
+    <script src="https://kit.fontawesome.com/3d577d1e65.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<div class="area-de-impresion">
+    <div class="encabezado">
+        <img src="fotocv.jpg"alt="">
+        <div class="encabezado-texto">
+            <h1>Tristan Hall</h1>
+            <p>Guardavidas e instructor de Natación</p>
+        </div>    
+    </div>
+
+    <div class="contenido">
+        <div class="area-izq">
+            <div class="contacto">
+                <h4>CONTACTO</h4>
+                <h5>Teléfono</h5>
+                <p>(881)4650424</p>
+                <h5>E-mail</h5>
+                <p>tristan.hall@example.com</p>
+                <h5>Domicilio</h5>
+                <p>Stevens Creek 6071</p>
+            </div>
+            <div class="Datos-personales">
+                <h1>DATOS PERSONALES</h1>
+                <h4>Fecha de nacimiento</h4>
+                <p>05/07/1993</p>
+                <h4>Nacionalidad</h4>
+                <p>Argentino</p>
+                <h4>DNI</h4>
+                <p>37.123.456</p>
+                <h4>Edad</h4>
+                <p>29</p>
+                <h4>Matrícula Guardavidas</h4>
+                <p>M33845</p>
+                <h4>HIJOS</h4>
+                <p>NO</p>
+
+
+            </div>
+        </div>
+        <div class="area-derecha">
+            <div class="estudios">
+                <h1><span><i class="fa-sharp fa-solid fa-graduation-cap"></i></span>EXPERIENCIA ACADEMICA</h1>
+                <div class="grupo-estudio">
+                    <h4>CURSO RCP Y PRIMEROS AUXILIOS</h4>
+                    <span>2018</span>
+                    <p>CRUZ ROJA. Mendoza.</p>
+                </div>
+                <div class="grupo-estudio">
+                    <h4>INSTRUCTORADO DE NATACION</h4>
+                    <span>2011</span>
+                    <p>A.M.G.A.A Burzaco, Buenos Aires.</p>
+                </div>
+                <div class="grupo-estudio">
+                    <h4>CURSO DE GUARDAVIDAS Y SALVAMENTO ACUATICO</h4>
+                    <span>2008</span>
+                    <p>A.M.G.A.A. Burzaco. Buenos Aires.</p>
+                </div>
+                <div class="grupo-estudio">
+                    <h4>BACHILLERATO EN HUMANIDADES Y CS SOCIALES</h4>
+                    <span>2007</span>
+                    <p>ALMAFUERTE N°28 Alejandro Korn, San Vicente. Buenos Aires.</p>
+                </div>
+            </div>
+            <div class="trabajo">
+                <h1><span><i class="fa-sharp fa-solid fa-briefcase"></i></span>EXPERIENCIA LABORAL</h1>
+                <div class="grupo-trabajo">
+                    <h3>INSTRUCTOR ADOLESCENTES Y NIÑOS</h3>
+                    <h4>Natatorio ACQUARELLA</h4>
+                    <span>2021</span>
+                    <P>0261-498756</P>
+                </div>
+                <div class="grupo-trabajo">
+                    <h3>GUARDAVIDAS DE PILETA</h3>
+                    <h4>COLONIA DE VERANO. MAIPU MUNICIPIO.</h4>
+                    <span>2017-2019</span>
+                    <P>0261-4978565</P>
+                </div>
+                <div class="grupo-trabajo">
+                    <h3>INSTRUCTOR DE NATACION. TERCERA EDAD.</h3>
+                    <h4>Natatorio AQUALIFE</h4>
+                    <span>2017</span>
+                    <P>0261-435866</P>
+                </div>
+                <div class="grupo-trabajo">
+                    <h3>AYUDANTE DE SALVAMENTO ACUATICO</h3>
+                    <h4>Natatorio Independiente Burzaco</h4>
+                    <span>2013-2015</span>
+                    <P>011-485779</P>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--AGREGADO JS-->
+<button>Imprimir CV</button>
+
+<script>
+    var btn = document.querySelector("button");
+    btn.onclick =() =>{
+        window.print();
+    }
+</script>
+<script>
+    function confirmacion() {
+        var pregunta = confirm("¿Desea conocer más sobre la profesión GUARDAVIDAS?")
+        if (pregunta){
+            alert("Te facilito la definición de WIKIPEDIA")
+            window.location = "https://es.wikipedia.org/wiki/Socorrista_acuático";
+        }
+        else{
+            alert("Quizás en otro momento...\n Gracias de todas formas")
+        }
+    }
+    </script>
+    <button type="button" onclick="confirmacion()">¿QUE ES UN GUARDAVIDAS?</button>
+</body>
+</html>
